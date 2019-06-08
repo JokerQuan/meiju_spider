@@ -1,0 +1,8 @@
+{
+  "name": "meiju_spider",
+  "version": "1.0.0",
+  "dependencies": {
+    "crawler": "^1.2.1",
+    "mongoose": "^5.5.11"
+  }
+}
