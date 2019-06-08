@@ -230,7 +230,7 @@ function start() {
             updateCategory();
             console.log(`爬取完成，共爬取到${doneMeijus.size}部美剧！`)
         }
-    }, 200);//服务器太渣改成4000
+    }, 3500);//服务器太渣3500， 本地200
 
 
     let showTaskId = setInterval(() => {
