@@ -4,6 +4,8 @@ Node.js v10.16.0
 
 npm 6.9.0
 
+### 主要功能
+
 目标网站：[美剧天堂](https://www.meijutt.com)
 
 主要获取数据为[前端](https://github.com/JokerQuan/meiju-client)和[服务端](https://github.com/JokerQuan/meiju-server)项目服务，第一次做爬虫功能，没有任何代码结构，全写在一个js文件里了。
