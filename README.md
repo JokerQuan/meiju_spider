@@ -4,6 +4,10 @@ Node.js v10.16.0
 
 npm 6.9.0
 
+### 主要框架
+
+Mongoose、Crawler
+
 ### 主要功能
 
 目标网站：[美剧天堂](https://www.meijutt.com)
