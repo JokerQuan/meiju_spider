@@ -29,7 +29,7 @@ npm 6.9.0
 4. 运行
     > node node_crawler.js
 
-    node_crawler.js 为源代码文件，234行指定了爬虫循环的间隔时间，根据运行环境可自行更改。
+    node_crawler.js 为源代码文件，第234行指定了爬虫循环的间隔时间，根据运行环境可自行更改。
 
 ### 生产环境运行（Linux）
 
@@ -49,7 +49,7 @@ npm 6.9.0
 
     > 例：pm2 start /meiju_projects/meiju_spider/node_crawler.js --name "spider"
 
-    node_crawler.js 为源代码文件，234行指定了爬虫循环的间隔时间，根据运行环境可自行更改。
+    node_crawler.js 为源代码文件，第234行指定了爬虫循环的间隔时间，根据运行环境可自行更改。
 
 5. pm2 基本命令
 
