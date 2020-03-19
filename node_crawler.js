@@ -12,7 +12,7 @@ let Types = [];
 
 
 
-const baseUrl = "https://www.meijutt.com";
+const baseUrl = "https://www.meijutt.tv";
 
 
 //定义一个schema
@@ -206,7 +206,7 @@ let c = new Crawler({
 });
 
 function start() {
-    c.queue("https://www.meijutt.com/");
+    c.queue(baseUrl);
 
     let times = 0, tasks = 0;
     let intervalId = setInterval(() => {
