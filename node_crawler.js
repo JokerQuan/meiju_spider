@@ -186,7 +186,8 @@ function updateCategory () {
             tags : Tags
         });
         category.save(function (error, doc) {
-            // console.log(doc);
+            console.log(error);
+            console.log(doc);
         });
     });
 }
@@ -231,7 +232,7 @@ function start() {
             console.log(`爬取完成，共爬取到${doneMeijus.size}部美剧！`);
             process.exit(0);
         }
-    }, 3500);//服务器太渣3500， 本地200
+    }, 500);//服务器太渣3500， 本地200
 
 
     let showTaskId = setInterval(() => {
