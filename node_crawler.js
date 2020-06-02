@@ -103,14 +103,14 @@ function setCategorys(type, area, tags) {
 }
 
 function parsePage($, body) {
-    //页面连接、标题，此数据用来调度程序执行
-    let elements = $('a[href^="/content/meiju"]');
-    addUrl(elements);
-
     //需要存储到数据库的字段
     let meiju = {};
 
     try {
+        //页面连接、标题，此数据用来调度程序执行
+        let elements = $('a[href^="/content/meiju"]');
+        addUrl(elements);
+
         meiju.href = $('.fn-left')[0].children[5].attribs.href;
         meiju.title = $('h1')[0].children[0].data;
         meiju.pic_url = $('.o_big_img_bg_b')[0].children[0].attribs.src;
@@ -192,6 +192,10 @@ function updateCategory () {
 }
 
 let c = new Crawler({
+    timeout : 15 * 1000,
+    retries : 5,
+    retryTimeout : 10 * 1000,
+    userAgent : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
     maxConnections : 5,
     // 这个回调每个爬取到的页面都会触发
     callback : function (error, res, done) {
@@ -231,7 +235,7 @@ function start() {
             console.log(`爬取完成，共爬取到${doneMeijus.size}部美剧！`);
             process.exit(0);
         }
-    }, 3500);//服务器太渣3500， 本地200
+    }, parseInt(Math.random() * 10000)); // 0 ~ 10 秒随机事件间隔
 
 
     let showTaskId = setInterval(() => {
